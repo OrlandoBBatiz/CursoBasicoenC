@@ -26,6 +26,8 @@ int main (){
     printf("El caracter ingresado es: %d\n\n",miprimercaracter);
 
     system("PAUSE");
-printf ("hola como estan ");
+    //Saludos de parte de Richi
+    printf ("hola como estan ");
+
     return 0;
 }
