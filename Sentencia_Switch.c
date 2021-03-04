@@ -6,12 +6,12 @@ int main (){
     int opc =0;
     int opc2 =0;
 
-    printf("--------------BIENVENIDO A AEROLINE ORLANDO BATIZ PANAS Copyrigth--------------\n\n");
-    printf("Elija un Destino:\n");
-    printf("1.-Chetumal\n");
-    printf("2.-Los Cabos\n");
-    printf("3.-Merida\n");
-    printf("4.-Guadalajara\n");
+    printf("--------------BIENVENIDO A Mc Batiz - Salinas Copyrigth--------------\n\n");
+    printf("Elija un Hamburguesa:\n");
+    printf("1.-Hawaina\n");
+    printf("2.-Doble\n");
+    printf("3.-Sencilla\n");
+    printf("4.-Tapa-Arterias\n");
     printf("5.-Salir del Menu\n");
     scanf("%d",&opc);
 
@@ -20,29 +20,29 @@ int main (){
     switch (opc)
     {
     case 1:
-        printf("\n\nSu opción fue: Chetumal\n\n");
 
-        printf("Elija tipo de Vuelo:\n");
-        printf("1.-VIP\t$1000\n");
-        printf("2.-Comercial\t$500\n");
-        printf("3.-Turista\t$250\n");
+        printf("Elija el tamaño de sus Papas Fritas:\n");
+        printf("1.-Peques\t\t$10\n");
+        printf("2.-Pa-Compartir\t$15\n");
+        printf("3.-Pa-Panas\t$30\n");
         scanf("%d",&opc2);
 
-        //printf("\n\nSu destino es CHETUMAL\n");
+        printf("\n\nSu orden es: \n");
+        printf("-\tHamburguesa Hawaiana\n");
         //Menu 2
         switch (opc2)
         {
         case 1:
-            printf("Su opcion fue Vuelo tipo VIP\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Peques\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
             break;
         case 2:
-            printf("Su opcion fue Vuelo tipo Comercial\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Pa-Compartir\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
             break;
         case 3:
-            printf("Su opcion fue Vuelo tipo Turista\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Pa-Panas\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz. LOS AMO PANAS");
             break;
         default:
             printf("OPCION INVALIDA... :C \n");
@@ -51,29 +51,28 @@ int main (){
 
         break;
     case 2:
-        printf("\n\nSu opción fue: Los Cabos\n\n");
-
-        printf("Elija tipo de Vuelo:\n");
-        printf("1.-VIP\t$1000\n");
-        printf("2.-Comercial\t$500\n");
-        printf("3.-Turista\t$250\n");
+        printf("Elija el tamaño de sus Papas Fritas:\n");
+        printf("1.-Peques\t\t$10\n");
+        printf("2.-Pa-Compartir\t$15\n");
+        printf("3.-Pa-Panas\t$30\n");
         scanf("%d",&opc2);
 
-        //printf("\n\nSu destino es CHETUMAL\n");
+        printf("\n\nSu orden es: \n");
+        printf("-\tHamburguesa Doble\n");
         //Menu 2
         switch (opc2)
         {
         case 1:
-            printf("Su opcion fue Vuelo tipo VIP\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Peques\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
             break;
         case 2:
-            printf("Su opcion fue Vuelo tipo Comercial\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Pa-Compartir\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
             break;
         case 3:
-            printf("Su opcion fue Vuelo tipo Turista\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Pa-Panas\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz. LOS AMO PANAS");
             break;
         default:
             printf("OPCION INVALIDA... :C \n");
@@ -82,29 +81,28 @@ int main (){
 
         break; 
     case 3:
-        printf("\n\nSu opción fue: Merida\n\n");
-
-        printf("Elija tipo de Vuelo:\n");
-        printf("1.-VIP\t$1000\n");
-        printf("2.-Comercial\t$500\n");
-        printf("3.-Turista\t$250\n");
+        printf("Elija el tamaño de sus Papas Fritas:\n");
+        printf("1.-Peques\t\t$10\n");
+        printf("2.-Pa-Compartir\t$15\n");
+        printf("3.-Pa-Panas\t$30\n");
         scanf("%d",&opc2);
 
-        //printf("\n\nSu destino es CHETUMAL\n");
+        printf("\n\nSu orden es: \n");
+        printf("-\tHamburguesa Sencilla\n");
         //Menu 2
         switch (opc2)
         {
         case 1:
-            printf("Su opcion fue Vuelo tipo VIP\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Peques\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
             break;
         case 2:
-            printf("Su opcion fue Vuelo tipo Comercial\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Pa-Compartir\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
             break;
         case 3:
-            printf("Su opcion fue Vuelo tipo Turista\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Pa-Panas\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz. LOS AMO PANAS");
             break;
         default:
             printf("OPCION INVALIDA... :C \n");
@@ -112,29 +110,28 @@ int main (){
         }
         break; 
     case 4:
-        printf("\n\nSu opción fue: Guadalajara\n\n");
-
-        printf("Elija tipo de Vuelo:\n");
-        printf("1.-VIP\t$1000\n");
-        printf("2.-Comercial\t$500\n");
-        printf("3.-Turista\t$250\n");
+        printf("Elija el tamaño de sus Papas Fritas:\n");
+        printf("1.-Peques\t\t$10\n");
+        printf("2.-Pa-Compartir\t$15\n");
+        printf("3.-Pa-Panas\t$30\n");
         scanf("%d",&opc2);
 
-        //printf("\n\nSu destino es CHETUMAL\n");
+        printf("\n\nSu orden es: \n");
+        printf("-\tHamburguesa tapa-Arterias\n");
         //Menu 2
         switch (opc2)
         {
         case 1:
-            printf("Su opcion fue Vuelo tipo VIP\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Peques\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
             break;
         case 2:
-            printf("Su opcion fue Vuelo tipo Comercial\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Pa-Compartir\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
             break;
         case 3:
-            printf("Su opcion fue Vuelo tipo Turista\n");
-            printf("DISFRUTE SU VUELO");
+            printf("-\tPapas Tamaño: Pa-Panas\n");
+            printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz. LOS AMO PANAS");
             break;
         default:
             printf("OPCION INVALIDA... :C \n");
