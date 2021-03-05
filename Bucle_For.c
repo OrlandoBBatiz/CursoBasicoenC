@@ -7,9 +7,13 @@ int main(){
     int i=0;
 
     float numeros[15];
+    char nombre[20];
 
     printf("---------Aprendiendo Arreglos y el Ciclo For con el Pana Orlando Batiz---------\n\n");
         //Inicia Variable; Condicion del For; Cambios por cada iteración
+
+    printf("Introduce tu nombre pana, porfavor: ");
+    fgets(nombre,sizeof(nombre),stdin);
     //Escritura del Arreglo
     for (i = 0; i < 15; i++)
     {
@@ -22,6 +26,13 @@ int main(){
     // Lectura del Arreglo
     for(i=0; i<15; i++){
         printf("Posicion %d: %.2f\n",i,numeros[i]);
+    }
+
+    printf("Leyendo mi arreglo de Caracteres\n");
+
+    for(i=0; i<sizeof(nombre) ;i++){
+        printf("Letra %d: %c\n",i,nombre[i]);
+
     }
 
 
