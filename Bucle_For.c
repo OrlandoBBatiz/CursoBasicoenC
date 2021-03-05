@@ -6,7 +6,7 @@ int main(){
 
     int i=0;
 
-    float numeros[15];
+    int numeros[15];
     char nombre[20];
 
     printf("---------Aprendiendo Arreglos y el Ciclo For con el Pana Orlando Batiz---------\n\n");
@@ -18,14 +18,24 @@ int main(){
     for (i = 0; i < 15; i++)
     {
         printf("Porfavor escriba un numero con decimal: ");
-        scanf("%f",&numeros[i]);
+        scanf("%d",&numeros[i]);
     }
     printf("\tFinalizo Escritura en el Arreglo\n\n");
 
     printf("Leyendo el Arreglo:\n");
     // Lectura del Arreglo
     for(i=0; i<15; i++){
-        printf("Posicion %d: %.2f\n",i,numeros[i]);
+        printf("Posicion %d: %d\n",i,numeros[i]);
+        
+        if( (numeros[i]%2) == 0 ) //Operacion modulo 2, que solo retorna 0 si es par, o 1 si es impar
+        {
+            printf("Es par el numero\n");
+        }
+        else
+        {
+            printf("Es impar el numero\n");
+        }
+        
     }
 
     printf("Leyendo mi arreglo de Caracteres\n");
