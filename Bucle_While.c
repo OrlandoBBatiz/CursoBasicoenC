@@ -3,22 +3,163 @@
 
 int main(){
 
-    int i=0;
-    char nombre_de_Empresa[40];
+    int opc =0;
+    int opc2 =0;
 
-    printf("Ingresa el nombre de tu empresa pana: ");
-    fflush(stdin);
-    fgets(nombre_de_Empresa,sizeof(nombre_de_Empresa),stdin);
 
-    printf("Empresa: %s\n\n",nombre_de_Empresa);
+    do{
+        printf("--------------BIENVENIDO A Mc Batiz - Salinas Copyrigth--------------\n\n");
+        printf("Elija un Hamburguesa:\n");
+        printf("1.-Hawaina\n");
+        printf("2.-Doble\n");
+        printf("3.-Sencilla\n");
+        printf("4.-Tapa-Arterias\n");
+        printf("5.-Salir del Menu\n");
+        scanf("%d",&opc);
 
-    printf("Impresion con un while\n");
-    //i=0
-    while (nombre_de_Empresa[i] != '\0')
-    {
-        printf("%c\n",nombre_de_Empresa[i]);
-        i++;
-    }
-    
+        
+        system("clear");
+        switch (opc)
+        {
+        case 1:
+
+            printf("Elija el tamaño de sus Papas Fritas:\n");
+            printf("1.-Peques\t\t$10\n");
+            printf("2.-Pa-Compartir\t$15\n");
+            printf("3.-Pa-Panas\t$30\n");
+            scanf("%d",&opc2);
+
+            system("clear");
+            printf("\n\nSu orden es: \n");
+            printf("-\tHamburguesa Hawaiana\n");
+            //Menu 2
+            
+            switch (opc2)
+            {
+            case 1:
+                printf("-\tPapas Tamaño: Peques\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
+                break;
+            case 2:
+                printf("-\tPapas Tamaño: Pa-Compartir\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
+                break;
+            case 3:
+                printf("-\tPapas Tamaño: Pa-Panas\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz. LOS AMO PANAS");
+                break;
+            default:
+                printf("OPCION INVALIDA... :C \n");
+                break;
+            }
+
+            break;
+        case 2:
+            printf("Elija el tamaño de sus Papas Fritas:\n");
+            printf("1.-Peques\t\t$10\n");
+            printf("2.-Pa-Compartir\t$15\n");
+            printf("3.-Pa-Panas\t$30\n");
+            scanf("%d",&opc2);
+
+            system("clear");
+            printf("\n\nSu orden es: \n");
+            printf("-\tHamburguesa Doble\n");
+            //Menu 2
+            
+            switch (opc2)
+            {
+            case 1:
+                printf("-\tPapas Tamaño: Peques\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
+                break;
+            case 2:
+                printf("-\tPapas Tamaño: Pa-Compartir\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
+                break;
+            case 3:
+                printf("-\tPapas Tamaño: Pa-Panas\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz. LOS AMO PANAS");
+                break;
+            default:
+                printf("OPCION INVALIDA... :C \n");
+                break;
+            }
+
+            break; 
+        case 3:
+            printf("Elija el tamaño de sus Papas Fritas:\n");
+            printf("1.-Peques\t\t$10\n");
+            printf("2.-Pa-Compartir\t$15\n");
+            printf("3.-Pa-Panas\t$30\n");
+            scanf("%d",&opc2);
+
+            system("clear");
+            printf("\n\nSu orden es: \n");
+            printf("-\tHamburguesa Sencilla\n");
+            //Menu 2
+            
+            switch (opc2)
+            {
+            case 1:
+                printf("-\tPapas Tamaño: Peques\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
+                break;
+            case 2:
+                printf("-\tPapas Tamaño: Pa-Compartir\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
+                break;
+            case 3:
+                printf("-\tPapas Tamaño: Pa-Panas\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz. LOS AMO PANAS");
+                break;
+            default:
+                printf("OPCION INVALIDA... :C \n");
+                break;
+            }
+            break; 
+        case 4:
+            printf("Elija el tamaño de sus Papas Fritas:\n");
+            printf("1.-Peques\t\t$10\n");
+            printf("2.-Pa-Compartir\t$15\n");
+            printf("3.-Pa-Panas\t$30\n");
+            scanf("%d",&opc2);
+
+            system("clear");
+            printf("\n\nSu orden es: \n");
+            printf("-\tHamburguesa tapa-Arterias\n");
+            //Menu 2
+            
+            switch (opc2)
+            {
+            case 1:
+                printf("-\tPapas Tamaño: Peques\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
+                break;
+            case 2:
+                printf("-\tPapas Tamaño: Pa-Compartir\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz");
+                break;
+            case 3:
+                printf("-\tPapas Tamaño: Pa-Panas\n");
+                printf("DISFRUTE SU ORDEN, le atendio el Pana Orlando Batiz. LOS AMO PANAS");
+                break;
+            default:
+                printf("OPCION INVALIDA... :C \n");
+                break;
+            }
+            break; 
+        case 5:
+            printf("Saliendo ... \n\n");
+            printf("Gracias por usar el sistema de Mc Batiz - Salinas Copyrigth");
+            break; 
+        default:
+            printf("OPCION INVALIDA... :C \n");
+            break;
+        }
+        printf("\n\n");
+        system("pause");
+        system("clear");
+    }while(opc != 5);
+
 
 }
