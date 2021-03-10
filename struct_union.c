@@ -1,66 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-union mensajes
-{
-    char miCaraceter;
-    char mensaje_natural[20];
-    int iterador;
-};
-
-struct persona
+typedef struct persona
 {
     char label;
     char nombre[20];
     int edad;
-};
+}human;
 
 int main(){
+    
+    human misPanas[5];
+    int iterador=0;
 
-    union mensajes mimensaje;
-    struct persona miPana;
+    while (iterador < 5)
+    {
+        printf("\n\nPana %d:\n\n",iterador);
+        printf("Dame tu nombre Pana: ");
+        fflush(stdin);
+        fgets(misPanas[iterador].nombre,sizeof(misPanas[iterador].nombre), stdin);
+
+        misPanas[iterador].label = misPanas[iterador].nombre[0]; //Entrando a un caracter especifico de una localidad especifica en mi arreglo de human
+
+        printf("Dame tu edad Pana: ");
+        scanf("%d",&misPanas[iterador].edad);
+        printf("Iterador: %d\n",iterador);
+
+        iterador++;
+    }
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("\n\nPana %d:\n\n",i+1);
+        printf("Nombre: %s\n",misPanas[i].nombre);
+        printf("Edad: %d\n",misPanas[i].edad);
+        printf("Letra Capital: %c\n",misPanas[i].label);
+    }
     
     
-    printf("============= Ejemplos Basicos de Union =============\n\n");
-    printf("Ingrese un caracter: ");
-    scanf("%c",&mimensaje.miCaraceter);
-
-    printf("Tu caracter es: %c\n\n",mimensaje.miCaraceter);
-
-    printf("Ingrese un valor numerico: ");
-    scanf("%d",&mimensaje.iterador);
-
-    printf("Tu iteredor tiene: %d\n",mimensaje.iterador);
-    printf("Tu caracter es: %c\n\n",mimensaje.miCaraceter);
-
-    printf("Escribeme un mensaje: ");
-    fflush(stdin);
-    fgets(mimensaje.mensaje_natural,sizeof(mimensaje.mensaje_natural),stdin);
-
-    printf("Tu mensaje natural es: %s\n",mimensaje.mensaje_natural);
-    printf("Tu iteredor tiene: %d\n",mimensaje.iterador);
-    printf("Tu caracter es: %c\n\n",mimensaje.miCaraceter);
-
-    printf("============= Ejemplos Basicos de Struct =============\n\n");
-
-    printf("Ingresa la Letra Capital de tu Nombre: ");
-    scanf("%c",&miPana.label);
-
-    printf("La Letra Capital es: %c\n\n",miPana.label);
-
-    printf("Ingrese su edad Pana: ");
-    scanf("%d",&miPana.edad);
-
-    printf("Edad: %d\n",miPana.edad);
-    printf("La Letra Capital es: %c\n\n",miPana.label);
-
-    printf("Escriba su nombre pana: ");
-    fflush(stdin);
-    fgets(miPana.nombre,sizeof(miPana.nombre),stdin);
-
-    printf("Su nombre es: %s\n",miPana.nombre);
-    printf("Su edad: %d\n",miPana.edad);
-    printf("La Letra Capital es: %c\n\n",miPana.label);
+    
     
     return 0;
 }
