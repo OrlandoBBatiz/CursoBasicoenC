@@ -1,39 +1,49 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
 
 int main(){
 
-    int dia=0;
-    int mes=0;
-    int anio=0;
+    srand(time(NULL));
 
-    int *apFecha;
+    int ruletaBatiz[5];
+    char ruletaBatizC[5];
     
 
-    printf("Ingrese el dia: ");
-    scanf("%d",&dia);
-    printf("Ingrese el mes: ");
-    scanf("%d",&mes);
-    printf("Ingrese el anio: ");
-    scanf("%d",&anio);
+    int *apRuleta;
+    char *apRuletaC;
+    int j=0;
 
-    printf("La fecha de hoy es: %d / %d / %d\n\n",dia,mes,anio);
+    apRuleta = ruletaBatiz;
+    apRuletaC = ruletaBatizC;
 
-    printf("Perdi la informacion, porfavor ingrese de nuevo los datos:\n\n");
+    for(int i = 0; i<5; i++)
+    {   
+        *(apRuleta + i) = rand()%2000;
+        
+    }
+    
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Numero guardado en %d: %d\n",i+1,*(apRuleta + i));
+    }
 
-    apFecha = &dia;
-    printf("Ingrese el dia: ");
-    scanf("%d",apFecha);
-
-    apFecha = &mes;
-    printf("Ingrese el mes: ");
-    scanf("%d",apFecha);
-
-    apFecha = &anio;
-    printf("Ingrese el anio: ");
-    scanf("%d",apFecha);
-
-    printf("La fecha de hoy es: %d / %d / %d\n\n",dia,mes,*apFecha);
+    j=0;
+    while(j<6)
+    {
+        printf("Ingrese el caracter %d: ",j+1);
+        fflush(stdin);
+        scanf("%c",(apRuletaC + j));
+        j++;
+    }
+    
+    j=0;
+    while(j<6)
+    {
+        printf("Caracter en %d: %c\n",j+1,*(apRuletaC + j)); 
+        j++;
+    }
 
     return 0;
 }
