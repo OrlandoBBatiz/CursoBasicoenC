@@ -137,7 +137,6 @@ int main(){
 double calculaSuma(double op1, double op2)
 {
     double resultado=0;
-    
     resultado = op1 + op2;
 
     return resultado;
